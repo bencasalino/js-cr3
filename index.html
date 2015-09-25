@@ -1,0 +1,29 @@
+<html ng-app="LogIn">
+  <head>
+    <title>Log In</title>
+    <!--  angular and ui router file path -->
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
+    <!-- link to partial state controllers -->
+    <script src="app.js"></script>
+    <script src="controllers/SignInController.js"></script>
+    <script src="controllers/WhoIsHereController.js"></script>
+    <!-- link to students factory  -->
+    <script src="services/StudentFactory.js"></script>
+    <!-- link to bootstrap 3 and external stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <a ui-sref="home">Home</a> |
+      <a ui-sref="sign-in">Sign In</a> |
+      <a ui-sref="who-is-here">Who's here</a>
+      <!-- bland ui-view needed to display -->
+      <div ui-view>
+
+      </div>
+    </div>
+  </body>
+</html>
