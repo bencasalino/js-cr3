@@ -3,10 +3,10 @@
   <h1>Please sign in here</h1>
   <ul class="list-unstyled">
     <li ng-repeat="item in students">
-        <!-- lists first and last name with sign in/out btns below  -->
+<!-- this is the "teachers view page " where they can sign students in and out of the class3 -->
       {{item.firstName}} {{item.lastName}}
-      <button ng-click="item.signedIn = !item.signedIn" ng-show="item.signedIn" class="btn btn-warning">Sign Out</button>
-      <button ng-click="item.signedIn = !item.signedIn" ng-show="!item.signedIn" class="btn btn-default">Sign In</button>
+      <button ng-click="item.signedIn = !item.signedIn" ng-show="item.signedIn" class="btn btn-danger">Sign Out</button>
+      <button ng-click="item.signedIn = !item.signedIn" ng-show="!item.signedIn" class="btn btn-primary">Sign In</button>
     </li>
   </ul>
 </div>

@@ -5,6 +5,6 @@
   </ul>
 <h2>Not Here</h2>
 <ul>
-          <!-- filter for students sign equals true to be listed below   -->
+          <!-- filter for students sign equals false to be listed below   -->
   <li ng-repeat="item in filtered = (students | filter:{signedIn : false})">{{item.firstName}} {{item.lastName}}</li>
 </ul>
