@@ -1,10 +1,10 @@
-<h2>Here</h2>
+<h2>Here - Signed in </h2>
   <ul>
-      <!-- filter for students sign equals true to be listed below  -->
+    <!--  the spot that actually displays who is signed in currently -->
     <li ng-repeat="item in filtered = (students | filter:{signedIn : true})">{{item.firstName}} {{item.lastName}}</li>
   </ul>
-<h2>Not Here</h2>
+<h2>Not Here - Signed out</h2>
 <ul>
-          <!-- filter for students sign equals false to be listed below   -->
+    <!--  the spot that actually displays who is NOT signed in currently -->
   <li ng-repeat="item in filtered = (students | filter:{signedIn : false})">{{item.firstName}} {{item.lastName}}</li>
 </ul>

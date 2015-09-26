@@ -1,9 +1,9 @@
 
 <div>
-  <h1>Please sign in here</h1>
+  <h1>Please sign in here:</h1>
   <ul class="list-unstyled">
     <li ng-repeat="item in students">
-<!-- this is the "teachers view page " where they can sign students in and out of the class3 -->
+<!-- this is the "teachers view page " where they can sign students in and out of the class -->
       {{item.firstName}} {{item.lastName}}
       <button ng-click="item.signedIn = !item.signedIn" ng-show="item.signedIn" class="btn btn-danger">Sign Out</button>
       <button ng-click="item.signedIn = !item.signedIn" ng-show="!item.signedIn" class="btn btn-primary">Sign In</button>
